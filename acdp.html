@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Datos</title>
+
+</head>
+<body BGCOLOR="#000000" text="00FFFF">
+    <center><h2>odontologia</h2></center>
+    <center><h1>♥♦♣♠ Foreman ♠♣♦♥</h1></center>
+    <center> <img width="200px" src="diente.png"/></center><br>
+    <center><h2>Verificacion de citas</h2></center>
+    <form>
+      <center><h2><label for="dat1">Nombre :</label>
+        <input type="text" id="dat1"><br><br>
+        <label for="dat2">Dia :</label>
+        <input type="text" id="dat2"><br><br>
+        <label for="dat3">Hora :</label>
+        <input type="text" id="dat3"><br><br></h2></center>
+        <center><button type="button" onclick="verificarDatos()">Verificar Datos</button></center>
+    </form>
+
+    <script>
+        function verificarDatos() {
+          
+            var v1 = document.getElementById("dat1").value;
+            var v2 = document.getElementById("dat2").value;
+            var v3 = document.getElementById("dat3").value;
+           
+    
+            
+            if (v1 === "Camila" && v2 === "Viernes" && v3 === "11:00am" || v1 === "Alan" && v2 === "Domingo" && v3 === "1:00pm" || v1 === "luna" && v2 === "lunes" && v3 === "8:00pm" ) {
+                alert("tu cita a sido comfirmada, bienvenida");
+            } else {
+                alert("¡disculpa no tienes cita el dia de hoy");
+            }
+        }
+    </script>
+</body>
+</html>
